@@ -1,0 +1,178 @@
+.tip-calculator {
+    background-color: $color-white;
+    padding: 2rem;
+    border-radius: $border-radius-1;
+    width: 100%;
+    max-width: 40rem;
+
+    &__form {
+        &-group {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__error {
+        color: $color-error;
+        font-size: $font-size-5;
+        font-weight: 700;
+    }
+
+    &__label {
+        &-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        font-size: $font-size-4;
+        font-weight: 700;
+
+        &--gray {
+            color: $color-dark-grayish-cyan-1;
+        }
+
+        &--white {
+            color: $color-white;
+        }
+
+        span {
+            display: block;
+            color: $color-dark-grayish-cyan-2;
+            font-size: $font-size-5;
+        }
+    }
+
+    &__input-group {
+        background-color: $color-light-grayish-cyan-2;
+        border-radius: $border-radius-2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+
+        img {
+            height: 1.2rem;
+        }
+
+        input {
+            font-size: $font-size-2;
+            font-weight: 700;
+            color: $color-very-cyan;
+            background-color: transparent;
+            text-align: right;
+            border: none;
+            margin-right: 1rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__tips {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    &__btn {
+        border: none;
+        font-size: $font-size-2;
+        padding: 0.5em 2em;
+        border-radius: $border-radius-2;
+        font-weight: 700;
+        font-family: inherit;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $color-light-grayish-cyan-1;
+            cursor: pointer;
+        }
+
+        &--tip {
+            background-color: $color-very-cyan;
+            color: $color-white;
+        }
+
+        &--active {
+            background-color: $color-strong-cyan;
+            color: $color-very-cyan;
+        }
+
+        &--plain {
+            background-color: $color-light-grayish-cyan-2;
+            color: $color-dark-grayish-cyan-1;
+        }
+
+        &--reset {
+            display: block;
+            width: 100%;
+            background-color: $color-strong-cyan;
+            color: $color-very-cyan;
+        }
+
+        &--custom-tip {
+            text-align: right;
+        }
+    }
+
+    &__reset {
+        background-color: $color-very-cyan;
+        padding: 1.5rem;
+        border-radius: $border-radius-1;
+
+        &-group {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-value {
+            font-size: $font-size-1;
+            color: $color-strong-cyan;
+            font-weight: 700;
+        }
+    }
+}
+
+// .tip-calculator__input-group input:focus {
+//     outline: none;
+// }
+
+.tip-calculator__input-group input:focus .tip-calculator__input-group {
+    border: 1px solid red;
+}
+
+// .tip-calculator__form-group input:focus .tip-calculator__form-group {
+//     outline: red;
+// }
+
+@media only screen and (min-width: 900px) {
+    .tip-calculator {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 2rem;
+        width: 90%;
+        max-width: 80rem;
+
+        &__form {
+            width: 100%;
+        }
+
+        &__reset {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__tips {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        &__btn--reset {
+            margin-top: auto;
+        }
+    }
+}

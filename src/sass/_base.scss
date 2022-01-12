@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-size: $font-base;
+    font-family: "Space Mono", sans-serif, Arial, Helvetica, sans-serif;
+    background-color: $color-light-grayish-cyan-1;
+    height: 100%;
+}
