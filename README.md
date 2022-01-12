@@ -12,8 +12,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source Code](https://github.com/waltersono/calculator-app)
-- Live Site URL: [View on Browser](https://waltersono.github.io/calculator-app/)
+- Solution URL: [Source Code](https://github.com/waltersono/tip-calculator-app)
+- Live Site URL: [View on Browser](https://waltersono.github.io/tip-calculator-app/)
 
 ## My process
 
